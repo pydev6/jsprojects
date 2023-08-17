@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white
+}
+
+h1 {
+    text-shadow: 1px 1px 2px black;
+}
+
+button {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px black;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.1)
+}

@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.key {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 150px;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+small {
+    font-size: 14px;
+    position: absolute;
+    top: -24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
