@@ -4,9 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="musicPlayer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>My Music Player</title>
   </head>
   <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left" id="left"></i>
+          </div>
+          <div class="circle"><i class="fa-solid fa-bars" id="list"></i></div>
+          <div class="circle">
+            <i class="fa-solid fa-angle-right" id="right"></i>
+          </div>
+        </nav>
+        <img src="media/cover.jpg" alt="cover" class="song-img" />
+        <h1>Happy Day</h1>
+        <p>Unkonwn</p>
+        <audio
+          id="song"
+          src="media/happy-day-background-vlog-music.mp3"
+          type="audio/mpeg"
+          autoplay
+        ></audio>
+        <div class="slider_container">
+          <div class="current-time">00:00</div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="0"
+            id="progress"
+            onchange="{seekTo}"
+          />
+          <div class="total-duration">00:00</div>
+        </div>
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
     <script src="musicPlayer.js"></script>
   </body>
 </html>

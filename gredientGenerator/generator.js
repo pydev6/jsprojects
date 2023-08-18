@@ -18,7 +18,7 @@ const hexNumbers = [
 ];
 let hex1 = '';
 let hex2 = '';
-let hex3 = '';
+// let hex3 = '';
 const hex1El = document.getElementById('hex1');
 const hex2El = document.getElementById('hex2');
 
